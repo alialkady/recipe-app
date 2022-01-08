@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,300&display=swap');
+* {
+    box-sizing: border-box;
+}
+body{
+    background-color: #BBD2C5;
+    margin: 0;
+    font-family: "poppins","sans-serif";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.mobile-container{
+    width: 400px;
+    height: 100%;
+    box-shadow: 0 0 5px #3333331a;
+    border-radius: 3px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    display: flex;
+
+}
+img{
+    max-width: 100%;
+
+}
+header{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header input{
+    background-color: #efefef;
+    border:none;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+    font-family: inherit;
+}
+header button{
+    
+    background-color:transparent;
+    color: #aaa;
+    border: none;
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+.fav-container{
+    padding: 0.5rem 1rem;
+    text-align: center;
+    background-color:rgb(212, 103, 255);
+    
+}
+
+
+.fav-meals{
+    display: flex;
+    list-style-type: none;
+    padding:0;
+    overflow: auto;
+    flex-wrap:wrap;
+display: flex;
+}
+.fav-meals li{
+margin:5px;
+width: 75px;
+}
+.fav-meals li img{
+    
+    object-fit: cover;
+    border-radius: 50%;
+    width:75px;
+    height: 75px;
+}
+.meal{
+margin: 1.5rem;
+box-shadow: 0 0 5px #3333331a;
+border-radius: 3px;
+overflow: hidden;
+
+}
+.meal-header{
+position: relative;
+}
+.meal-header .random{
+position: absolute;
+top: 10px;
+background-color: #fff;
+padding: 0.25rem 0.5rem;
+border-top-right-radius: 3px;
+border-bottom-right-radius: 3px;
+}
+.meal-header img{
+height: 250px;
+width: 100%;
+object-fit: cover;
+}
+.meal-body{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1rem;
+}
+.meal-body h4{
+    margin: 0;
+}
+.meal-body .fav-btn{
+    background-color: transparent;
+    border: none;
+    font-size: 1.2;
+    color: grey;
+    cursor: pointer;
+}
+.meal-body .fav-btn .active{
+color: rebeccapurple;
+}
